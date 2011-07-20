@@ -3,7 +3,7 @@ _s = require 'underscore.string'
 express = require 'express'
 http = require 'http'
 app = express.createServer()
-stopwords = require('./stopwords').stopwords
+stopwords = require('stopwords').stopwords
 
 app.get '/:screen_name', (request, response) ->
   follower_options =
